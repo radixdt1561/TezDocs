@@ -1,0 +1,453 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="fgg" rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="all">
+    <title>404</title>
+    <style type="text/css">
+        body {
+          margin: 0;
+          font-family: 'Plus Jakarta Sans', sans-serif;
+    
+        }
+    
+        img {
+          max-width: 100%;
+          height: auto;
+          width: auto;
+        }
+    
+        header {
+          position: fixed;
+          left: 0;
+          right: 0;
+          background-color: #fff;
+          z-index: ;
+        }
+    
+        .nav-wrapper .menuWrap {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+    
+        .nav-wrapper>div {
+          margin: 0 auto;
+          position: relative;
+          padding: 1rem;
+        }
+    
+        .nav-wrapper .logoMain {
+          display: inline-block;
+          padding: 0 0.533rem;
+        }
+    
+        .hidden {
+          display: none;
+        }
+    
+        .block {
+          display: block;
+        }
+    
+        .white-logo {
+          display: none;
+        }
+    
+        .dark .white-logo {
+          display: block;
+        }
+        /* font size */
+        h1{
+	 font-size: calc(1.625rem + 1.5vw);
+	 line-height: calc(2rem + 1.8vw);
+	 font-weight: 800;
+	 margin-bottom: 1.5625rem;
+}
+ 
+ h3 {
+	 font-size: calc(1.25rem + 0.6vw);
+	 line-height: calc(1.5rem + 0.8vw);
+	 margin-bottom: 1.5625rem;
+}
+ h4 {
+	 font-size: calc(1.25rem + 0.3vw);
+	 line-height: calc(1.5rem + 0.6vw);
+	 margin-bottom: 1.5625rem;
+}
+ 
+ p {
+	 font-size: 1.125rem;
+	 line-height: 1.625rem;
+	 color: #333;
+	 margin-bottom: 1.25rem;
+}
+ 
+ @media (min-width: 1200px) {
+	 h1 {
+		 font-size: 3.5rem;
+		 line-height: 3.875rem;
+		 color: #333;
+		 margin-bottom: 1.5625rem;
+	}
+	 
+	 h3 {
+		 font-size: 1.875rem;
+		 margin-bottom: 1.875rem;
+	}
+	 h4 {
+		 font-size: 1.5rem;
+		 line-height: 33px;
+		 margin-bottom: 1.875rem;
+		 margin-top: 0;
+		 color: #333;
+	}
+	 
+	 
+	 p{
+		 font-size: 1.25rem;
+		 line-height: 2.125rem;
+		 color: #333;
+		 margin-top: 0;
+		 margin-bottom: 20px;
+	}
+	 p{
+		 font-size: calc(1.25rem + 0.2vw);
+		 line-height: 2.75rem;
+		 color: #333;
+	}
+}
+        /* font size */
+        .errorMain {
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 4rem 0;
+        }
+        .errorMain::before{
+            content: '';
+           display: hidden;
+          
+        }
+        .errorMain::after{
+            content: '';
+           display: hidden;
+        }
+    
+        .errorMain img {
+          margin: 0 auto;
+          max-width: 100%;
+          width: auto;
+          height: auto;
+        }
+    
+        .errorMain h4 {
+          font-size: 1.25rem;
+          margin-bottom: 2.5rem;
+        }
+    
+        .errorMain h1 {
+          font-size: 2.25rem;
+        }
+    
+        a.btnStructure {
+	 font-weight: 600;
+	 color: #fff;
+	 border: none;
+	 display: inline-block;
+	 text-decoration: none;
+	 padding: 16px 20px 16px 27px;
+	 border-radius: 8px;
+	 moz-transition: all 0.4s ease-in-out;
+	 -o-transition: all 0.4s ease-in-out;
+	 -webkit-transition: all 0.4s ease-in-out;
+	 transition: all 0.4s ease-in-out;
+}
+ a.btnStructure:hover {
+	 background-position: 100% 0;
+	 moz-transition: all 0.4s ease-in-out;
+	 -o-transition: all 0.4s ease-in-out;
+	 -webkit-transition: all 0.4s ease-in-out;
+	 transition: all 0.4s ease-in-out;
+}
+ a.btnStructure:focus {
+	 outline: none;
+}
+ a.btnStructure.primary-gradient {
+	 font-size: 1.125rem;
+	 font-weight: 500;
+	 border: solid 2px transparent;
+	 background: linear-gradient(to right, #31bbae, #4eb3a0, #53b691);
+}
+ a.btnStructure.primary-gradient:hover {
+	 filter: drop-shadow(0 0px 3px #333333) drop-shadow(0 3px 3px #333333);
+	 transition-property: all;
+	 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	 transition-duration: 0.4s;
+}
+ a.btnStructure.border-gradient {
+	 color: #333333;
+	 font-size: 1.125rem;
+	 font-weight: 500;
+	 box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+	 border: solid 2px transparent;
+	 background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, #31bbae, #53b691);
+	 background-origin: border-box;
+	 background-clip: content-box, border-box;
+	 box-shadow: 2px 1000px 1px #edf8ed inset;
+}
+
+ a.btnStructure.border-gradient:hover {
+	 filter: drop-shadow(0 0px 3px #333333) drop-shadow(0 3px 3px #333333);
+	 transition-property: all;
+	 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	 transition-duration: 0.4s;
+}
+ a.btnStructure.only-background {
+	 color: #333333;
+	 font-size: 1.375rem;
+	 font-weight: 500;
+	 box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+	 border: solid 3px transparent;
+	 box-shadow: 2px 1000px 1px #edf8ed inset;
+}
+a.btnStructure.only-background:hover {
+    filter: drop-shadow(0 0px 3px #333333) drop-shadow(0 3px 3px #333333);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.4s;
+}
+@media (min-width: 640px) {
+    .errorMain::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            width: 318px;
+            height: 90px;
+            left: 0;
+            background: url('./assets/images/unpluged.svg') no-repeat;
+            background-size: contain;
+          
+        }
+        .errorMain::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            width: 317px;
+            height: 101px;
+            right: 0;
+            z-index: 1;
+            background: url('./assets/images/plug.svg') no-repeat;
+            background-size: contain;
+        }
+}
+@media (min-width: 1280px) {
+    .errorMain::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            width: 636px;
+            height: 180px;
+            left: 0;
+            background-size: contain;
+            background: url('./assets/images/unpluged.svg') no-repeat;
+        }
+        .errorMain::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            width: 634px;
+            height: 202px;
+            right: 0;
+            background-size: contain;
+            background: url('./assets/images/plug.svg') no-repeat;
+        }
+    a.btnStructure::after {
+		 content: '';
+		 background: url('/assets/images/custom_white_arrow.svg') no-repeat center;
+		 padding-left: 1.75rem;
+		 height: 0.9375rem;
+		 width: 0.9375rem;
+		 display: inline-block;
+	}
+    a.btnStructure.border-gradient::after {
+		 content: '';
+		 display: inline-block;
+		 background: url('/assets/images/custom_black_arrow.svg') no-repeat center;
+		 padding-left: 1.75rem;
+		 height: 0.9375rem;
+		 width: 0.9375rem;
+	}
+    a.btnStructure.only-background::after {
+        content: '';
+        display: inline-block;
+        background: url('/assets/images/custom_black_arrow.svg') no-repeat center;
+        padding-left: 1.75rem;
+        height: 0.9375rem;
+        width: 0.9375rem;
+   }
+}
+        
+        img{
+                max-width: 70%;
+            }
+            a.btn {
+                padding: 10px 20px;
+            }
+            .nav-wrapper>div{
+                padding: 0.5rem;
+            }
+        @media (min-width: 768px) {
+            .nav-wrapper>div {
+          margin: 0 auto;
+          position: relative;
+          padding: 1rem;
+        }
+            img{
+                max-width: 100%;
+            }
+    
+         
+    
+          .md-block {
+            display: block;
+          }
+    
+          .md-hidden {
+            display: none;
+          }
+    
+          .nav-wrapper>div {
+            margin: 0 auto;
+            position: relative;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+          }
+        }
+        /* CSS FOR FOOTER */
+        footer {
+          background-color: #f3f3f3;
+          color: #333333;
+          font-size: 1rem;
+        }
+    
+        footer a {
+          color: #31bbae;
+          text-decoration: none;
+        }
+    
+        footer .px-4 {
+          padding: 0 1rem;
+        }
+    
+        footer p {
+          text-align: center;
+          line-height: 1.5rem;
+        }
+    
+        .COPYRI8TXT p {
+          margin-top: 0;
+        }
+    
+        .container {
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 0 15px;
+        }
+    
+        .row {
+          align-items: center;
+          flex-wrap: wrap;
+          display: flex;
+          margin-left: -15px;
+          margin-right: -15px;
+          justify-content: center;
+        }
+    
+        @media (min-width: 1188px) {
+          .row {
+            justify-content: space-between;
+          }
+    
+          footer p {
+            text-align: inherit;
+          }
+    
+          .COPYRI8TXT p {
+            margin-top: 16px;
+          }
+    
+        }
+      </style>
+</head>
+<body>
+    <header>
+      <div class="nav-wrapper">
+        <div>
+          <div class="menuWrap">
+            <div>
+              <a class="logoMain" href="/" title="Radixweb">
+                <div class="">
+                  <div class="main-logo"> <img src="/assets/images/tez_logo.png" alt="Logo of Radixweb" width="90" height="94"></div>
+                </div>
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a href="/contact-us" class="btnStructure primary-gradient" aria-label="Get in Touch" title="Get in Touch">
+                <span>
+                  Get in Touch
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div>
+      <div>
+        <div>
+          <section class="errorMain b-space dark:bg-themeblack-40">
+            <div class="container">
+                <h3>Ohhh! No</h3>
+              <div><img alt="404" width="633" height="257" class="lazyLoad isLoading"
+                  src="./assets/images/404.png"></div>
+              <h1>Something Missing</h1>
+              <h4>The page you are looking for does not exist.</h4>
+              <a href="/" class="btnStructure border-gradient"><span>Back To Home
+                  page</span></a>
+            </div>
+          </section>
+        </div>
+        <!-- <footer>
+          <div class="summer-landing-footer textcenterxs">
+            <div class="container">
+              <div class="row">
+                <div class="px-4">
+                  <p>A limited number of pictures can be processed for a FREE trial to showcase our quality.
+                  </p>
+                </div>
+                <div class="px-4">
+                  <div class="COPYRI8TXT">
+                    <p> Copyright &copy;
+                      <script type="text/javascript"> document.write(new Date().getFullYear());</script> Radixweb. All Rights Reserved. An ISO 9001:2015 Certified Company <a href="/">Home</a> | <a href="/privacy-policy">Privacy Policy</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer> -->
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

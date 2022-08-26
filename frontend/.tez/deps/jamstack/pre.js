@@ -1,0 +1,12 @@
+
+        import header from "/@/components/header.vue";import footer from "/@/components/footer.vue";
+        import main from "/@/layouts/main.vue";
+        export default function(registerTezPage,preload){
+            const payload = {"url":"/jamstack","slots":{"default":[{"name":"footer","data":{"componentName":"footer"},"id":"6-footer"}]},"masterPageSlots":{"header":[{"name":"header","data":{"componentName":"header"},"id":"0-header"}],"footer":[{"name":"footer","data":{"componentName":"footer"},"id":"1-footer"}]},"tags":{"title":"Jamstack - Build Website with Modern Architecture Driven Approach","canonical":"https://local.host/jamstack","linkingData":"{'@context':'http://schema.org','@type':'WebPage','name':'Jamstack - Build Website with Modern Architecture Driven Approach','url':'https://tezjsio.web.app/jamstack','inLanguage':'en-US','description':'TezJS implements a modern architecture-driven approach using Jamstack for robust security, simpler developer experience, and better performance of the website.','publisher':{'@type':'Organization','name':'TezJs','url':'https://tezjsio.web.app/'}}","metaTag":{"name":{"viewport":"width=device-width, initial-scale=1.0","description":"TezJS implements a modern architecture-driven approach using Jamstack for robust security, simpler developer experience, and better performance of the website."},"property":{"og:local":"en_US","og:type":"website","og:title":"Jamstack - Build Website with Modern Architecture Driven Approach","og:description":"TezJS implements a modern architecture-driven approach using Jamstack for robust security, simpler developer experience, and better performance of the website.","og:url":"/jamstack","og:site_name":"TezJS","og:image":"/uploads/header_image_f015729b2e.png","og:image:width":"652","og:image:height":"539","twitter:card":"summary_large_image","twitter:title":"Jamstack - Build Website with Modern Architecture Driven Approach","twitter:description":"TezJS implements a modern architecture-driven approach using Jamstack for robust security, simpler developer experience, and better performance of the website.","twitter:image":"/uploads/header_image_f015729b2e.png","twitter:site":"tezjs"}}},"layoutName":"main"}; 
+            registerTezPage({
+                components:{"header":header,"footer":footer,},
+                masterPage:{"main":main,},
+                payload:payload,
+                postScript: ()=>import("/tez/deps/jamstack/post.js")
+            })
+        }    

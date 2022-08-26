@@ -1,0 +1,9 @@
+export default{
+    computed:{
+        toGradient(){
+          var title = this.data.title
+          var titleGradient = title.replace(/\*\*(.*?)\*\*/gm, '<strong>$1</strong>')
+          return titleGradient;
+        }
+      },
+}

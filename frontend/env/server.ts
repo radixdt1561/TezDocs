@@ -1,0 +1,1 @@
+export const env : {SITE_URL:string}  = {"SITE_URL":"https://local.host"}
