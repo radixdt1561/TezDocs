@@ -1,10 +1,10 @@
 
-        import header from "/@/components/header.vue";
+        import header from "/@/components/header.vue";import homepagebanner from "/@/components/homepage-banner.vue";
         import main from "/@/layouts/main.vue";
         export default function(registerTezPage,preload){
-            const payload = {"url":"/","slots":{},"masterPageSlots":{"header":[{"name":"header","data":{"componentName":"header"},"id":"0-header"}],"footer":[{"name":"footer","data":{"componentName":"footer"},"id":"1-footer"}]},"tags":{"title":"Docs | TezJs","canonical":"https://local.host/","metaTag":{}},"layoutName":"main"}; 
+            const payload = {"url":"/","slots":{"default":[{"name":"homepage-banner","data":{"title":"Start Learning For **TEZJS**","longText":"<h2>The Architectural <strong>Features of Tez</strong></h2><ul><li>Island Architecture</li><li>Content Lazy Loading</li><li>Loading Images with Service Workers</li><li>Environment Variable Management</li></ul><h2>Why Choose <strong>Tez?</strong></h2><ul><li>Most Engaging Digital Experience</li><li>Omnichannel Content Delivery</li><li>Search Engine Friendly</li><li>Marketers and Developers Choice</li><li>Faster</li><li>Robust Security</li></ul>","vueReferenceCode":"homepage-banner","cTA":"/introducation","icon":{},"image":{"name":"Banner_image.png","alternativeText":"Highest Website Speed","caption":"Banner_image.png","width":652,"height":551,"formats":{"thumbnail":{"name":"thumbnail_Banner_image.png","hash":"thumbnail_Banner_image_a9c9737f94","ext":".png","mime":"image/png","width":185,"height":156,"size":18.63,"url":"/uploads/thumbnail_Banner_image_a9c9737f94.png"},"small":{"name":"small_Banner_image.png","hash":"small_Banner_image_a9c9737f94","ext":".png","mime":"image/png","width":500,"height":423,"size":76.27,"url":"/uploads/small_Banner_image_a9c9737f94.png"}},"hash":"Banner_image_a9c9737f94","ext":".png","mime":"image/png","size":18.28,"url":"/uploads/Banner_image_a9c9737f94.png","updatedAt":"2022-07-20T07:57:26.855Z"},"bGImage":{},"hoverIcon":{},"hoverImage":{}},"id":"0-homepage-banner"}]},"masterPageSlots":{"header":[{"name":"header","data":{"componentName":"header"},"id":"0-header"}],"footer":[{"name":"footer","data":{"componentName":"footer"},"id":"1-footer"}]},"tags":{"title":"Docs | TezJs","canonical":"https://local.host/","metaTag":{}},"layoutName":"main"}; 
             registerTezPage({
-                components:{"header":header,},
+                components:{"header":header,"homepage-banner":homepagebanner,},
                 masterPage:{"main":main,},
                 payload:payload,
                 postScript: ()=>import("/tez/deps/index/post.js")

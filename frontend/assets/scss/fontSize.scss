@@ -60,16 +60,18 @@ html {
   @media (min-width: 1200px) {
     h1,
     h1 > span {
-      font-size: 3.2rem;
-      line-height: 3.875rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
       color: #333333;
       margin-bottom: 1.5625rem;
+      font-weight: 600;
     }
     h2, .h2 {
-      font-size: 2.875rem;
-      line-height: 3.75rem;
+      font-size: 2rem;
+      line-height: 3rem;
       color: #333333;
-      margin-bottom: 1.875rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
     }
     h3, .h3 {
       font-size: 1.875rem;

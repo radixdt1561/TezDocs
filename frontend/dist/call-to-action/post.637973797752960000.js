@@ -1,0 +1,1 @@
+import t from"/assets/footer.component.637973797752960000.js";function l(o,a){o({components:{footer:t},masterPage:{},payload:{url:"/call-to-action",slots:{},masterPageSlots:{footer:[{name:"footer",data:{componentName:"footer"},id:"1-footer"}]}}})}export{l as default};

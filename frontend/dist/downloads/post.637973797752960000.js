@@ -1,0 +1,1 @@
+import t from"/assets/footer.component.637973797752960000.js";function d(o,a){o({components:{footer:t},masterPage:{},payload:{url:"/downloads",slots:{},masterPageSlots:{footer:[{name:"footer",data:{componentName:"footer"},id:"1-footer"}]}}})}export{d as default};

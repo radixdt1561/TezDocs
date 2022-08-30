@@ -1301,10 +1301,7 @@ span.textGradient {
   a {
     font-weight: 600;
     &:hover {
-      color: transparent;
-      background: linear-gradient(to right, #3aabdf, #63bd5e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #A0A9A5;
     }
   }
 }

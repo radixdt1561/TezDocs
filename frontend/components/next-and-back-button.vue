@@ -1,7 +1,7 @@
 <template lang="">
   <div class="flex flex-warp justify-between">
     <div>
-      <div v-if="currentIndex > 0">
+      <div v-if="currentIndex > 0" class="flex items-center ">
         <img
           class="inline"
           style=" transform: rotate(180deg); background-image: url(/assets/images/arrow.svg);"
@@ -10,23 +10,23 @@
           height="20"
           alt="Explore More"
         />
-        <h2   
-          class="inline text-2xl customContent no-underline text-[#00b5d5] hover:text-[#63bd5e] ml-3 hover:ml-4 hover:ease-in-out hover:duration-300 cursor-pointer"
+        <p   
+          class="inline text-2xl mb-0 customContent no-underline text-[#63bd5e] hover:text-black ml-3 hover:ml-4 hover:ease-in-out hover:duration-300 cursor-pointer"
           @click="handleBack()"
         >
           Previous  
-        </h2>
+        </p>
         
       </div>
     </div>
     <div>
-      <div  v-if="currentIndex < 10">
-        <h2  
-          class="inline text-2xl customContent no-underline text-[#00b5d5] hover:text-[#63bd5e] mr-3 hover:mr-4 hover:ease-in-out hover:duration-300 cursor-pointer"
+      <div  v-if="currentIndex < 10" class="flex items-center ">
+        <p  
+          class="inline text-2xl customContent no-underline text-[#63bd5e] hover:text-black mr-3 mb-0 hover:mr-4 hover:ease-in-out hover:duration-300 cursor-pointer"
           @click="handleNext()"
         >
           Next
-        </h2>
+        </p>
         <img
           class="inline"
           v-tez-src="'/assets/images/arrow.svg'"

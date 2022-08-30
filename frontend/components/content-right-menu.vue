@@ -1,6 +1,8 @@
 <template>
   <fragment>
-    <section class="container center-content">
+    <section
+      class="container center-content mx-auto prose-h1:text-left prose-h2:text-left prose-p:leading-7 lg:prose-p:leading-[34px] prose-p:text-lg lg:prose-p:text-xl prose-slate prose-a:text-[#62BD5F] prose-blockquote:text-white prose-blockquote:italic prose-blockquote:px-6 prose-blockquote:py-3 prose-blockquote:border-l-2 prose-blockquote:border-solid prose-blockquote:border-l-[#bbbbba] prose-blockquote:bg-[#f8f8f8] prose-ul:text-left prose-pre:px-10 prose-pre:py-10 prose-pre:bg-[#435C66]"
+    >
       <div class="flex flex-wrap justify-between">
         <div
           class="w-full pt-5 border-2 border-indigo-600 lg:w-3/4 lg:pr-4 lg:pl-0"

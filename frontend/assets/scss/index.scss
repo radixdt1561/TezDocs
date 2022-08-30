@@ -65,23 +65,24 @@ h3 {
   margin: 0;
   strong {
     font-weight: 800;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#3aabdf),
-      to(#63bd5e)
-    );
-    background: -o-linear-gradient(left, #3aabdf, #63bd5e);
-    background: linear-gradient(to right, #3aabdf, #63bd5e);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    &::selection {
-      -webkit-text-fill-color: white;
-    }
+    // background: -webkit-gradient(
+    //   linear,
+    //   left top,
+    //   right top,
+    //   from(#3aabdf),
+    //   to(#63bd5e)
+    // );
+    // background: -o-linear-gradient(left, #3aabdf, #63bd5e);
+    // background: linear-gradient(to right, #3aabdf, #63bd5e);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // box-decoration-break: clone;
+    // -webkit-box-decoration-break: clone;
+    // &::selection {
+    //   -webkit-text-fill-color: white;
+    // }
+    color: #000000;
   }
 }
 h5.bg-graident,
@@ -244,8 +245,8 @@ table {
 
 html h6 {
   padding: 1.5625rem 1.5625rem;
-  border: 2px solid orange;
-  background-color: rgb(253, 255, 162);
+  border: 2px solid #fdffa2;
+  background-color: rgba(253, 255, 162, 0.3);
   font-weight: normal;
   strong {
     display: block;
@@ -260,7 +261,7 @@ html h6 {
     p {
       @apply m-0 p-0;
       a {
-        @apply p-4 block text-xl hover:text-gray-500 text-[#4eb49e] no-underline border border-solid border-l-[#e0e0e0] border-transparent;
+        @apply p-4 block text-xl text-black hover:text-gray-500 no-underline border border-solid border-l-[#e0e0e0] border-transparent;
       }
     }
   }
